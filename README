@@ -1,0 +1,13 @@
+SDL Basics
+==========
+
+SDL basics
+
+Before compile
+==============
+Use the command: autoreconf --force --install
+
+Compile
+=======
+Use the executable: ./configure
+and then: make

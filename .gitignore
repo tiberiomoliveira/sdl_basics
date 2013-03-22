@@ -11,3 +11,29 @@
 *.lai
 *.la
 *.a
+
+# Installer files
+*.run
+
+# Binaries files
+CApp
+
+# Makefile files
+Makefile
+depcomp
+install-sh
+missing
+configure
+aclocal.m4
+autom4te.cache
+stamp-h1
+config.h
+config.status
+.depend
+.deps
+*.in
+
+# Misc files
+*.log
+*.swp
+
