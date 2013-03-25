@@ -7,7 +7,9 @@ AM_CXXFLAGS=-g -Wall -Werror \
 LDLIBS=`sdl-config --libs`
 
 bin_PROGRAMS = CApp
-CApp_SOURCES = include/CApp.h \
+CApp_SOURCES = include/CSurface.h \
+							 include/CApp.h \
+							 src/CSurface.cpp \
 							 src/CApp.cpp \
 							 src/CApp_on_init.cpp \
 							 src/CApp_on_event.cpp \

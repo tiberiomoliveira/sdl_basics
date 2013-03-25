@@ -31,6 +31,7 @@ config.h
 config.status
 .depend
 .deps
+.dirstamp
 *.in
 
 # Misc files

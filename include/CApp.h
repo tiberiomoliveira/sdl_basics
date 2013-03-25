@@ -1,7 +1,7 @@
 #ifndef _CAPP_H_
 #define _CAPP_H_
 
-#include <SDL/SDL.h>
+#include "CSurface.h"
 
 #define SCREEN_WIDTH  640
 #define SCREEN_HEIGHT 480
@@ -21,6 +21,7 @@ class CApp {
   private:
     bool         running;
     SDL_Surface* surf_display;
+    SDL_Surface* surf_test;
 };
 
 #endif
