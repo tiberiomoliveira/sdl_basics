@@ -10,8 +10,19 @@ bool CApp::on_init() {
                                        SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)
     return false;
 
-  if ((surf_test = CSurface::on_load("sprites/image.bmp")) == NULL)
+  if ((surf_grid = CSurface::on_load("./sprites/grid.bmp")) == NULL)
     return false;
+
+  if ((surf_x = CSurface::on_load("./sprites/x.bmp")) == NULL)
+    return false;
+
+  if ((surf_o = CSurface::on_load("./sprites/o.bmp")) == NULL)
+    return false;
+
+  CSurface::transparent(surf_x, 255, 0, 255);
+  CSurface::transparent(surf_o, 255, 0, 255);
+
+  reset();
 
   return true;
 }
