@@ -1,6 +1,9 @@
 #include "CApp.h"
 
 void CApp::on_event(SDL_Event* event) {
-  if (event->type == SDL_QUIT)
-    running = false;
+  CEvent::on_event(event);
+}
+
+void CApp::on_exit() {
+  running = false;
 }
