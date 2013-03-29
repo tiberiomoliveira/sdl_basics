@@ -2,17 +2,18 @@
 #define _CAPP_H_
 
 #include "CSurface.h"
+#include "CAnimation.h"
 #include "CEvent.h"
 
 #define SCREEN_WIDTH  640
 #define SCREEN_HEIGHT 480
+#define SPRITE_SIZE   64
 
 class CApp : public CEvent{
   public:
     CApp();
-    int on_execute();
 
-  public:
+    int  on_execute();
     bool on_init();
     void on_event(SDL_Event* event);
     void on_exit();
@@ -24,6 +25,7 @@ class CApp : public CEvent{
     bool         running;
     SDL_Surface* surf_display;
     SDL_Surface* surf_test;
+    CAnimation   anim_yoshi;
 };
 
 #endif

@@ -10,8 +10,10 @@ bool CApp::on_init() {
                                        SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)
     return false;
 
-  if ((surf_test = CSurface::on_load("sprites/image.bmp")) == NULL)
+  if ((surf_test = CSurface::on_load("sprites/yoshi.bmp")) == NULL)
     return false;
+
+  anim_yoshi.max_frames = 8;
 
   return true;
 }
