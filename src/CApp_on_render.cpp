@@ -8,10 +8,10 @@ void CApp::on_render() {
     int y = (i / 3) * (SCREEN_HEIGHT / 3);
 
     if (grid[i] == GRID_TYPE_X)
-      CSurface::on_draw(surf_display, surf_x, x, y);
+      CSurface::on_draw(surf_x, surf_display, x, y);
     else
       if (grid[i] == GRID_TYPE_O)
-        CSurface::on_draw(surf_display, surf_o, x, y);
+        CSurface::on_draw(surf_o, surf_display, x, y);
 
   }
 
