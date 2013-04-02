@@ -9,7 +9,7 @@ CAnimation::CAnimation()
   old_time(0) {}
 
 void
-CAnimation::on_animation() {
+CAnimation::on_animate() {
   if (old_time + frame_rate > SDL_GetTicks())
     return;
 

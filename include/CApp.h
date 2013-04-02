@@ -1,8 +1,7 @@
 #ifndef _CAPP_H_
 #define _CAPP_H_
 
-#include "CSurface.h"
-#include "CAnimation.h"
+#include "CEntity.h"
 #include "CEvent.h"
 
 #define SCREEN_WIDTH  640
@@ -26,6 +25,8 @@ class CApp : public CEvent{
     SDL_Surface* surf_display;
     SDL_Surface* surf_test;
     CAnimation   anim_yoshi;
+    CEntity      entity_1;
+    CEntity      entity_2;
 };
 
 #endif

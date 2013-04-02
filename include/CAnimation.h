@@ -6,7 +6,7 @@
 class CAnimation {
   public:
     CAnimation();
-    void on_animation();
+    void on_animate();
 
     void set_frame_rate(int rate);
     void set_current_frame(int frame);

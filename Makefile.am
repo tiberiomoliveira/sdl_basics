@@ -11,6 +11,7 @@ CApp_SOURCES = include/CApp.h \
 							 include/CSurface.h \
 							 include/CEvent.h \
 							 include/CAnimation.h \
+							 include/CEntity.h \
 							 src/CApp.cpp \
 							 src/CApp_on_init.cpp \
 							 src/CApp_on_event.cpp \
@@ -19,6 +20,7 @@ CApp_SOURCES = include/CApp.h \
 							 src/CApp_on_cleanup.cpp \
 							 src/CSurface.cpp \
 							 src/CEvent.cpp \
-							 src/CAnimation.cpp
+							 src/CAnimation.cpp \
+							 src/CEntity.cpp
 
 dist_noinst_SCRIPT = autogen.sh

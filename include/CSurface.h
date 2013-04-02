@@ -17,6 +17,8 @@ class CSurface {
                                 int x1, int y1,
                                 int w,  int h,
                                 int x2, int y2);
+    static bool         transparent(SDL_Surface* surf_dst,
+                                    int r, int g, int b);
 };
 
 #endif

@@ -58,3 +58,16 @@ CSurface::on_draw(SDL_Surface* surf_src,
 
   return true;
 }
+
+bool
+CSurface::transparent(SDL_Surface* surf_dst,
+                      int r, int g, int b) {
+  if (surf_dst == NULL)
+    return false;
+
+  SDL_SetColorKey(surf_dst,
+                  SDL_SRCCOLORKEY | SDL_RLEACCEL,
+                  SDL_MapRGB(surf_dst->format, r, g, b));
+
+  return true;
+}
